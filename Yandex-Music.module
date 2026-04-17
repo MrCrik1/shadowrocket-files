@@ -1,0 +1,9 @@
+#!name=Yandex Music Premium
+#!desc=Unlock Yandex Music
+#!system=ios
+
+[Script]
+YandexMusic = type=http-response,pattern=^https://api.music.yandex.net/.*,requires-body=1,max-size=0,script-path=https://www.dropbox.com/scl/fi/js2r8g3jrih4w79u2fcn0/Yandex-Music.js?rlkey=pdyp2uht37syr638eprr1eiyj&st=tq58l0f9&dl=0
+
+[MITM]
+hostname = api.music.yandex.net
