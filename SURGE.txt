@@ -1,0 +1,10 @@
+#!name =surge test hack
+#!desc = Need to be enabled: once  │  Subscription needed: ✖️
+#!icon = https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/59/98/75599860-87c1-ee97-7f55-288c319e696e/AppIcon-0-0-1x_U007emarketing-0-4-0-85-220.png/100x100bb.jpg
+#!date = 21.04.2024
+
+[Script]
+http-response https://www.surge-activation.com/ios/v3/(device-management|refresh) script-path= https://www.dropbox.com/scl/fi/4a1866v0xt1iekiacmjq8/SURGE.js?rlkey=owdfb6c00z2m5gj8vps3nvj2d&st=tqo82tfu&dl=1, requires-body=true, timeout=10
+
+[Mitm]
+hostname = %APPEND%surge-activation.com,127.0.0.1
