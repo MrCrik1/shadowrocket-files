@@ -1,0 +1,11 @@
+#!name = Nicegram Premium
+#!author = k4be1
+#!desc = Включение: разовое
+#!icon = https://i.imgur.com/YKVNO3J.jpg
+#!date = 25.10.2023
+
+[Script]
+http-response https://restore-access.indream.app/restoreAccess\?id=\d{5,10} script-path= https://www.dropbox.com/scl/fi/p53ppu912xumwktsjtte0/Nicegram.js?rlkey=soysjl7q5whr10o5f3mvkw63y&dl=1, timeout=10, requires-body=true, tag=Nicegram
+
+[MITM]
+hostname = restore-access.indream.app
