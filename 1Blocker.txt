@@ -1,0 +1,10 @@
+#!name =1Blocker hack
+#!desc = Need to be enabled: once  │  Subscription needed: ✖️
+#!icon = https://i.imgur.com/ZLJjFWp.jpg
+#!date = 19.10.2023
+
+[Script]
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/subscribers\/[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}$ script-path= https://www.dropbox.com/scl/fi/xex0enegiekpye8jlhcxd/1Blocker.js?rlkey=w7d3f4khtd3mfnhk3y0mnwgpn&dl=1, requires-body=true, timeout=10, tag=1Blocker, img-url=https://i.imgur.com/ZLJjFWp.jpg
+
+[Mitm]
+hostname = %APPEND%api.revenuecat.com
